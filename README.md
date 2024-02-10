@@ -1,6 +1,6 @@
 # React Projects and Exercises
 
-Welcome to my React repository! Here you'll find a collection of exercises and small projects that I've completed while learning React. Feel free to explore the code and experiment with it.
+Welcome to my React repository! Here you will find a collection of exercises and small projects that I've completed while learning React. Feel free to explore the code and experiment with it.
 
 ## Table of Contents
 
