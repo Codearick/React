@@ -13,7 +13,7 @@ Welcome to my React repository! Here you will find a collection of exercises and
 
 ## Introduction
 
-In this repository, I have documented my journey of learning React by working on various exercises and small projects. React is a popular JavaScript library for building user interfaces, and I've found it to be an exciting and powerful tool for creating dynamic web applications.
+In this repository, I've documented my journey of learning React by working on various exercises and small projects. React is a popular JavaScript library for building user interfaces, and I've found it to be an exciting and powerful tool for creating dynamic web applications.
 
 ## Projects
 
