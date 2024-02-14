@@ -70,7 +70,7 @@ To use this React page:
 
 ## Preview
 
-![React Page Preview](./preview.png)
+![React Page Preview](./src/assets/preview.png)
 
 ## Contributing
 
