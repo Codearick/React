@@ -1,4 +1,4 @@
-```markdown
+
 # Basic React Page
 
 This repository contains a basic React page created as part of my learning journey. The page consists of a Navbar, Footer, and multiple Cards.
