@@ -7,7 +7,10 @@ This is a simple card application built with React. It fetches data from the [JS
 ## Features
 - Fetches data from an external API.
 - Displays fetched data in styled cards.
-- Includes a Navbar for navigation.
+- Includes a Navbar for web simulation.
+
+## Screenshot
+![Screenshot](screenshot.png)
 
 ## Technologies Used
 - React
