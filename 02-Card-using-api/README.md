@@ -39,4 +39,3 @@ This project was created by [codearick].
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-```
