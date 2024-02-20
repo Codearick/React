@@ -1,8 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Card App with React
 
-Currently, two official plugins are available:
+## Overview
+This is a simple card application built with React. It fetches data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/posts) to populate the cards. Each card displays the title and body of a post.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Fetches data from an external API.
+- Displays fetched data in styled cards.
+- Includes a Navbar for navigation.
+
+## Technologies Used
+- React
+- TailwindCSS
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/card-app.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd card-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+## API Used
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/posts)
+
+## Credits
+This project was created by [codearick].
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+```
