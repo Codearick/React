@@ -1,2 +1,2 @@
 # Todo-it
-## This is a basic todo app
+## This is a basic todo app created on a
