@@ -1,4 +1,2 @@
 # Todo-it
-## This is a basic todo list 
-
-
+## This is a basic todo 
