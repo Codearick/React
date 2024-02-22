@@ -1,2 +1,2 @@
 # Todo-it
-## This is a basic todo app created on a react
+## This is a basic todo app created on a React
