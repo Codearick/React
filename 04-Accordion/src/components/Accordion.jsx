@@ -53,7 +53,7 @@ const Accordion = () => {
                         </div>
                         {
                         selected === dataItem.id || multiple.indexOf(dataItem.id) !== -1 ? 
-                         <div className={`answer mx-auto my-0 flex align-center justify-center`}>
+                         <div className={`answer mx-auto my-0 flex align-center justify-center animate-bounce hover:animate-pulse`}>
                              <span className='w-[80vw] px-10 py-7 border text-xl'>{dataItem.answer}</span>
                         </div>
                         : null
