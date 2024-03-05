@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 const Randomcolor = () => {
     const [typeofColor, setTypeofColor] = useState("hex");
@@ -26,6 +26,12 @@ const Randomcolor = () => {
         }
         setColor(hexColor);
     }
+
+    useEffect(() => {
+      if (typeofColor == "rgb") handleGenerateRgb();
+      else handleGenerateHex()
+    }, [typeofColor])
+    
 
 
     return (
