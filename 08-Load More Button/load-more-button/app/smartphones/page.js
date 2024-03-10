@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { MdOutlineShoppingCart } from "react-icons/md";
 
 
-const LoadMore = () => {
+const page = () => {
   const [loading, setLoading] = useState(false);
   const [product, setProduct] = useState([]);
   const [count, setCount] = useState(0);
@@ -14,11 +14,13 @@ const LoadMore = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const request = await fetch(`https://dummyjson.com/products?limit=20&skip=${count === 0 ? 0 : count * 20}`)
+      const request = await fetch(`https://dummyjson.com/products?limit=20&skip=${count === 0 ? 0 : count * 30}`)
       const productData = await request.json();
-      if (productData && productData.products && productData.products.length) {
-        console.log("Product data is: ", productData)
-        setProduct(productData.products);
+      const phoneData = productData.products.filter(item => item.category === "smartphones")
+
+      if (phoneData && phoneData.length) {
+        console.log("Phone data is: ", phoneData)
+        setProduct(phoneData);
         setLoading(false);
       }
     }
@@ -33,11 +35,10 @@ const LoadMore = () => {
     if (product && count === 5) {
       setDisableBtn(true);
     }
-
-  }, ([count]));
+  }, ([product], [count]));
 
   return (
-    <div className='card-container flex flex-wrap items-center justify-center h-full w-full gap-5 bg-white p-7 overflow-auto'>
+    <div className='card-container flex flex-wrap items-center justify-center min-h-[100vh] w-full gap-5 bg-white p-7 overflow-auto'>
       {
         product && product.length > 0
           ? product.map((product, index) => (
@@ -71,12 +72,12 @@ const LoadMore = () => {
           ))
           : <div className='font-extrabold text-3xl '>No products found!</div>
       }
-      <div className=' flex flex-col items-center button-container h-10'>
-        {disableBtn ? <div className='text-black p-3 rounded-3xl'>Nothing More to Display!</div> : null}
+      {/* <div className=' flex flex-col items-center button-container h-10'>
         <button disabled={disableBtn} onClick={() => setCount(count + 1)} className='hover:text-lg bg-black text-white p-3 rounded-3xl'>Load More Products</button>
-      </div>
+        {disableBtn ? <div className='text-black p-3 rounded-3xl'>Nothing More to Display!</div> : null}
+      </div> */}
     </div>
   )
 }
 
-export default LoadMore
+export default page

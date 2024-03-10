@@ -1,23 +1,31 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '@/public/next.svg'
 
 const Navbar = () => {
     return (
-        <header class="text-white bg-black body-font sticky top-0">
-            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
-                    <span class="ml-3 text-xl text-white">Next Shop</span>
-                </a>
-                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-200">Men</a>
-                    <a class="mr-5 hover:text-gray-200">Women</a>
-                    <a class="mr-5 hover:text-gray-200">Contact</a>
-                    <a class="mr-5 hover:text-gray-200">About</a>
+        <header className="text-white bg-black body-font sticky top-0">
+            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <Link href={"/"} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    {/* <Image
+                        className='object-contain w-2 h-1'
+                        fill={true}
+                        src= {Logo}
+                        priority
+                        alt='NextShop'
+                    /> */}
+                <span className="ml-3 font-bold text-2xl text-white">Next Shop</span>
+                </Link>
+                <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <Link href={"/"} className="mr-5 hover:text-gray-200">Home</Link>
+                    <Link href={"/smartphones"} className="mr-5 hover:text-gray-200">Smartphones</Link>
+                    <Link href={"/laptops"} className="mr-5 hover:text-gray-200">Laptops</Link>
+                    <Link href={"/gadgets"} className="mr-5 hover:text-gray-200">Gadgets</Link>
+                    <Link href={"/contact"} className="mr-5 hover:text-gray-200">Contact</Link>
                 </nav>
-                <button class=" text-black inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <button className="animate-pulse text-black inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="animate-pulse w-4 h-4 ml-1" viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
