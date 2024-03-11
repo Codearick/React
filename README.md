@@ -1,6 +1,6 @@
-# React Projects and Exercises
+# React/Next.js Projects and Exercises
 
-Welcome to my React repository! Here you will find a collection of exercises and small projects that I've completed while learning React. Feel free to explore the code and experiment with it.
+Welcome to my React repository! Here you will find a collection of exercises and small projects that I've completed while learning React/Next.js. Feel free to explore the code and experiment with it.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ Welcome to my React repository! Here you will find a collection of exercises and
 
 ## Introduction
 
-In this repository, I've documented my journey of learning React by working on various exercises and small projects. React is a popular JavaScript library for building user interfaces, and also I've found it to be an exciting and powerful tool for creating dynamic web applications.
+In this repository, I've documented my journey of learning React/Next.js by working on various exercises and small projects. React is a popular JavaScript library for building user interfaces, and also I've found it to be an exciting and powerful tool for creating dynamic web applications.
 
 ## Projects
 
